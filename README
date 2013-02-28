@@ -1,0 +1,38 @@
+Movable Type plugin  Disqus Comment Snippet
+
+DISQUS コメントの ユニバーサルコード を Movable Type のファンクションタグ化したものです
+
+要件:
+    DISQUSのアカウントをもっている
+	Movable Type 5.x か MTOS 5.x 以降
+
+
+インストール: 
+    DisqusCommentSnippet ファルダを Movable Type の plugins ディレクトリ下にいれます。
+
+設定:
+    設定はブログごとにおこない、DISQUS のショートネーム を入力します。
+    (ショートネームをいれないと表示できませんので、あらかじめ DISQUS 上で設置サイト用のスレッドを作成しておきます)
+
+提供されるテンプレートタグ:
+    <MTDisqusCommentSnippet>
+
+
+http://disqus.com/admin/universalcode/ の
+
+<script type="text/javascript">
+:
+</script>
+<noscript></noscript>
+<p><a href= ....	
+までを出力し、　オプションとして、disqus_url と disqus_identifier を付与します。
+disqus_identifier は、 ブログでは 「エントリid: 記事パーマリンク」、ウェブページでは、「website: 記事パーマリンク」を出力します。
+
+注意点:
+
+    スニペット部分のみ提供で、コメント数は別途自分で設置する必要があります。
+    Disqus 公式のプラグインとの互換性はありません。Disqus の機能を使われたいときは公式のプラグインを利用してください。
+
+License: GPLv2
+
+2013 http://labs.markdiary.com by maRk
