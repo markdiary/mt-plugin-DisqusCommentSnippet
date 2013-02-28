@@ -1,0 +1,20 @@
+name: Disqus Comment Snippet
+id: DisqusCommentSnippet
+key: DisqusCommentSnippet
+
+version: 0.1
+description: <__trans phrase="Disqus comment system snippet">
+author_name: maRk
+author_link: http://labs.markdiary.com/
+plugin_link: https://bitbucket.org/markdiarycom/mt-plugin-disquscommentsnippet
+
+blog_config_template: config.tmpl
+settings:
+    mdc_dqsShortname:
+        Default: 'Disqus shortname'
+        Scope: blog
+l10n_lexicon:
+    ja: l10n_ja.yaml
+tags:
+    function:
+        DisqusCommentSnippet: $DisqusCommentSnippet::DisqusCommentSnippet::Tags::_hdlr_disqus
